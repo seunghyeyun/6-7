@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>이력서</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            td,th {
+                border: 2px solid black;
+                text-align: center;
+            }
+
+            td:hover{color: red;}
+
+            table {
+                border-collapse: collapse;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                text-align: left;
+                width: 60%;
+                text-align: center;
+            }
+            li { 
+                display: inline-block;
+            }
+       
+            h2{
+                width: 60%;
+                text-align: center;
+            }
+
+
+            .wrapper{
+                display: flex;
+                align-items: left;
+                min-height: 50vh;
+            }
+
+            h3{
+            text-align: center;
+            }
+            
+            .resume_nav{
+                    margin: 20px 0px;
+            }
+
+            .resume_body{
+                display: flex;
+                flex : 0 50%;
+                flex-direction: column;
+                align-items: center;
+        
+            }
+
+            .resume_body table{
+                width: 80%;
+                height: 100%;
+                margin: 2px 0;
+                padding: 0;
+            }
+
+        
+            .register_form{
+                width: 50%;
+              
+                float: right;
+            }
+
+            .register_form fieldset{
+                border: black 2px solid;
+            }
+
+            input:hover{background-color: red;}
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <section class="resume_body">
+                <h2>이력서</h2>
+                <ul class="resume_nav">
+                    <li>
+                        <a href="#개인신상">개인신상</a>
+                    </li>
+                    <li>
+                        <a href="#학력사항">학력사항</a>
+                    </li>
+                    <li>
+                        <a href="#자각면허">자각면허</a>
+                    </li>
+                    <li>
+                        <a href="#경력">경력(수상)</a>
+                    </li>
+                </ul>
+                <table id="개인신상">
+                    <tbody>
+                        <tr>
+                            <td rowspan="5">
+                                <img src="증명사진.jpg" width="150" height="200">
+                            </td>
+                            <th rowspan="3" background = "d.webp">성명</th>
+                            <td>(한글): 윤승혜</td>
+                            <th background = "d.webp">지원분야</th>
+                            <td>개발자</td>
+                        </tr>
+                        <tr>
+                            <td>(한자): 尹昇惠</td>
+                            <th background = "d.webp">연락처</th>
+                            <td>010-4178-5034</td>
+                        </tr>
+                        <tr>
+                            <td>(영문): YUN SEUNG HYE</td>
+                            <th background = "d.webp">e-mail</th>
+                            <td>viki04-2@naver.com</td>
+                        </tr>
+                        <tr>
+                            <th background = "d.webp">생년월일</th>
+                            <td>2004.02.08</td>
+                            <th background = "d.webp">보훈대상</th>
+                            <td>대상(), 비대상(O)</td>
+                        </tr>
+                        <tr>
+                            <th background = "d.webp">주소</th>
+                            <td colspan="3">서울시 oo구 oo동 oo아파트 000호</td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+                <table id="학력사항">
+                    <tbody>
+                        <tr>
+                            <th rowspan="4" bgcolor="#CED8F6">학력사항</th>
+                            <th bgcolor="#CED8F6">기간</th>
+                            <th bgcolor="#CED8F6">출신학교</th>
+                            <th bgcolor="#CED8F6">전공</th>
+                            <th bgcolor="#CED8F6">학점</th>
+                            <th bgcolor="#CED8F6">졸업여부</th>
+                        </tr>
+                        <tr>
+                            <td>2017.03 ~ 2020.02</td>
+                            <td>하계중학교</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>졸업</td>
+                        </tr>
+                        <tr>
+                            <td>2020.03 ~ 2023.02</td>
+                            <td>용화여자고등학교</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>졸업</td>
+                        </tr>
+                        <tr>
+                            <td>2023.03 ~</td>
+                            <td>한양여자대학교</td>
+                            <td>빅데이터과</td>
+                            <td>X</td>
+                            <td>재학중</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="자각면허">
+                    <tbody>
+                        <tr>
+                            <th rowspan="3" background = "d.webp">자격면허</th>
+                            <th background = "d.webp">자격증(면허)명</th>
+                            <th background = "d.webp">등급</th>
+                            <th background = "d.webp">취득년월일</th>
+                            <th background = "d.webp">발행기관</th>
+                        </tr>
+                        <tr>
+                            <td>컴퓨터활용능력</td>
+                            <td>2급</td>
+                            <td>2023.03.07</td>
+                            <td>대한상공회의</td>
+                        </tr>
+                        <tr>
+                            <td>JLPT(일본어 능력 시험)</td>
+                            <td>1급</td>
+                            <td>2023.04.35</td>
+                            <td>일본국제교류기금</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="경력">
+                    <tbody>
+                        <tr>
+                            <th rowspan="3" bgcolor="#CED8F6">경험사항</td>
+                            <th bgcolor="#CED8F6">기관명</td>
+                            <th bgcolor="#CED8F6">기간</td>
+                            <th bgcolor="#CED8F6">업무내용</td>
+                        </tr>
+                        <tr>
+                            <td>한양여자대학교 빅데이터과</td>
+                            <td>2023.03 ~ 2026.02</td>
+                            <td>웹프론트를 이용하여 이력서와 회원가입 페이지 작성</td>
+                        </tr>
+                        <tr>
+                            <td>한양여자대학교 직업속 머신러닝</td>
+                            <td>2023.01 ~ 2026.01</td>
+                            <td>직업 속 머신러닝에 대한 교육 이수</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="resume_body">
+                <form class="register_form">
+                    <fieldset>
+                        <legend><h3>회원가입</h3></legend>
+                        사진<br>
+                        <img src="기본 프로필.jpeg" width="100" height="100"><br>
+                        <br>
+                        이름<br>
+                        <input type="text" name="user_name"><br>
+                        아이디<br>
+                        <input type="text" name="user_ID"><br>
+                        비밀번호<br>
+                        <input type="text" name="user_passward">
+                        <br>
+                        나이<br>
+                        <input type="text" name="age"><br>
+                        생년월일<br>
+                        <input type="checkbox" name="check" value="solar">양력
+                        <input type="checkbox" name="check" value="lunar">음력<br>
+                        <select name="year">
+                            <option value="">연도</option>
+                            <option value="1995">1995</option>
+                            <option value="1996">1996</option>
+                            <option value="1997">1997</option>
+                            <option value="1998">1998</option>
+                            <option value="1999">1999</option>
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                            <option value="2004">2004</option>
+                        </select>
+
+                        <select name="month">
+                            <option value="">월</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+
+                        <select name="day">
+                            <option value="">일</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <br><br>
+                        성별<br>
+                        <input type="radio" name="gender" value="female" checked="">여성<br>
+                        <input type="radio" name="gender" value="male">남성
+                        <br>
+                        가입 이유<br>
+                        <input type="checkbox" name="check" value="reason1">웹프론드엔드
+                        <input type="checkbox" name="check" value="reason2">파이썬
+                        <input type="checkbox" name="check" value="reason3">자바
+                        <input type="checkbox" name="check" value="reason4">기타
+                        <br><br>
+                        <input type="submit" name="submit" value="가입하기">
+                    </fieldset>
+                </form>
+            </section>
+        </div>  
+        <footer>
+            <h3> 2302567 윤승혜</h3>
+        </footer>
+    </body>
+</html>

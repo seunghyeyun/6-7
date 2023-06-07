@@ -4,6 +4,10 @@
         <meta charset="UTF-8">
         <title>이력서</title>
         <style>
+            video{
+                width: 200px;
+                height: 70px;
+            }
             body{
                 margin: 0;
                 padding: 0;
@@ -20,20 +24,26 @@
             }
             ul {
                 list-style-type: none;
-                margin: 0;
-                padding: 0;
+                margin: 1px;
+                padding: 1px;
                 text-align: left;
                 width: 60%;
                 text-align: center;
             }
+            
             li { 
                 display: inline-block;
             }
        
             h2{
                 width: 60%;
+                margin: 1px;
                 text-align: center;
             }
+            tbody{
+                height: 40px;
+            }
+
 
 
             .wrapper{
@@ -42,8 +52,9 @@
                 min-height: 50vh;
             }
 
-            h3{
+            h6{
             text-align: center;
+            margin-top: 1px;
             }
             
             .resume_nav{
@@ -60,8 +71,8 @@
 
             .resume_body table{
                 width: 80%;
-                height: 100%;
-                margin: 2px 0;
+                height: 90%;
+                margin: 1px 0;
                 padding: 0;
             }
 
@@ -77,6 +88,7 @@
             }
 
             input:hover{background-color: red;}
+            
         </style>
     </head>
 
@@ -98,6 +110,11 @@
                         <a href="#경력">경력(수상)</a>
                     </li>
                 </ul>
+                <div>
+                    <audio src="강아지.mp4" controls = "controls" style="display:inline;"></audio>
+                    <video src="강아지.mp4" controls = "controls" style="display:inline;"></video>
+                </div>
+
                 <table id="개인신상">
                     <tbody>
                         <tr>
@@ -309,7 +326,7 @@
             </section>
         </div>  
         <footer>
-            <h3> 2302567 윤승혜</h3>
+            <h6>빅데이터과 2302567 윤승혜</h6>
         </footer>
     </body>
 </html>
